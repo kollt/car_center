@@ -14,7 +14,7 @@ namespace lab_car_center
         private string center_name = "no name";
         private string adress;
         private string mail_adress;
-        private string owner;//влоделец
+        private string owner;//владелец
         private List<Car> cars = new List<Car>();
         public string Adress { get { return adress; } set { adress = value; } }
         public string Mail_agress { get { return mail_adress; } set { mail_adress = value; } }
@@ -82,68 +82,5 @@ namespace lab_car_center
         }
 
     }
-    internal class Car
-    {
-        private string manufacturer;
-        private string model;
-        private double price;
-        private string color;
-        private string yeat_production;
-        private Engine engine = new Engine();
-        public string Manufacturer { get { return manufacturer; } set { manufacturer = value; } }
-        public string Model { get { return model; } set { model = value; } }
-        public double Price { get { return price; } set { price = value; } }
-        public string Color { get { return color; } set { color = value; } }
-        public string Yeat_production { get { return yeat_production; } set { yeat_production = value; } }
 
-        public void Print_info()
-        {
-            Console.WriteLine("Машина " + Manufacturer + " модель " + Model + " Цвета " + Color + " года производства" + Yeat_production);
-        }
-        public Car(string manufacturer, string model, double price, string color, string yeat_production)
-        {
-            Model = model;
-            Manufacturer = manufacturer;
-            Price = price;
-            Color = color;
-            Yeat_production = yeat_production;
-        }
-        public Car()
-        {
-            Model = "no model";
-            Manufacturer = "no";
-            Price = 0;
-            Color = "no";
-            Yeat_production = "no";
-
-        }
-        ~Car()
-        {
-            Console.WriteLine("удалена",model);
-        }
-    }
-
-    internal class Engine
-    {
-        private string model;
-        private string fuel_type;//топ топлива
-        private int power;//л.с
-        private string manufacturer;
-        private string volume;
-        public string Model { get { return model; } set { model = value; } }
-        public string Fuel_type { get { return fuel_type; } set { fuel_type = value; } }    
-        public int Power { get { return power; } set { power = value; } }   
-        public string Manufacturer { get { return manufacturer; } set { manufacturer = value; } }   
-        public string Volume { get { return volume; } set { volume = value; } }
-
-        public Engine()
-        {
-            Model = "V6";
-            Volume = "4,7";
-            Manufacturer = "Mercedes";
-            Power = 245;
-            Fuel_type = "бензин";
-        }
-
-    }
 }

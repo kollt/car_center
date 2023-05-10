@@ -3,8 +3,9 @@
   <Class Name="lab_car_center.Car">
     <Position X="5.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgBAAAIAQAAAAAAAAAAAAQAAAAAAACAAAgEgAQIBAA=</HashCode>
-      <FileName>Class1.cs</FileName>
+      <HashCode>AAgBAAAIAQAAAgAAAAAgAAQAAAAAACCAAAgEgAQIBAA=</HashCode>
+      <FileName>Car.cs</FileName>
+      <NewMemberFileName>Car_center.cs</NewMemberFileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="engine" />
@@ -19,7 +20,7 @@
     </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAACCAAJAigAAAAAAAAAAABgAAAAYAGAAAACgAAA=</HashCode>
-      <FileName>Class1.cs</FileName>
+      <FileName>Car_center.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Cars" />
@@ -29,7 +30,8 @@
     <Position X="8.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAIAAAAgAAAAIAAAAAAAAEAAAABAAoAAAAKAAA=</HashCode>
-      <FileName>Class1.cs</FileName>
+      <FileName>Engine.cs</FileName>
+      <NewMemberFileName>Car_center.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
